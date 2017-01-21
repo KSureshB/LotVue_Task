@@ -1,5 +1,5 @@
 function show_roles(){
-	$('#show').toggle();
+	$('#show_roles').toggle();
 }
 // 	$("#show_roles").click(function(){
 // 	alert(3333);

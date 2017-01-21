@@ -30,7 +30,7 @@
   <div class="field">
     <%= submit_tag "Hide Roles", :type => 'button', :onclick => "show_roles()";%>
   </div>
-  <div id = "show">
+  <div id = "show_roles">
   <% Role.all.each do |role|%>
   <li>
       <%= check_box_tag "role_id", role.id %>
@@ -47,6 +47,6 @@
 <script>
 $(window).load(function() {
   // alert(333);
-      $("#show").hide();
+      $("#show_roles").hide();
 });
 </script>
