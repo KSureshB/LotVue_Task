@@ -1,0 +1,21 @@
+<div >
+<% @userss =["Users created with checkbox", "Users created without selecting checkbox"]%>
+<label> Filter Users</label>
+<%= select_tag 'list', options_for_select([["Select" , "" ]] + @userss.to_a) %>
+
+</div>
+<br>
+
+<div class="field">
+    <%= submit_tag "ShowUsers", :type => 'button', :id => "show_particular_userss";%>
+  </div>
+
+
+  <div id= "my_users">
+  </div>
+  <script>
+$(window).load(function() {
+  // alert(333);
+      $("#show_particular_users").hide();
+});
+</script>
