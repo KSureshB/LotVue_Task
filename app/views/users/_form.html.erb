@@ -34,7 +34,7 @@
   <% Role.all.each do |role|%>
   <li>
       <%= check_box_tag "role_id", role.id %>
-      <%= role.name %>
+      <%= begin role.name rescue nil end %>
     </li>
   
   <% end %>
